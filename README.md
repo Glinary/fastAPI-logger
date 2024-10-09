@@ -1,4 +1,4 @@
-# BE FastAPI Intern
+# How to run the FastAPI service
 
 ## Create a virtual environment (venv)
 
