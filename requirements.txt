@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pymongo
+gradio
+pydantic
+pandas
