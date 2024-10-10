@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 from ..service import create_item, read_item, update_item, delete_item, read_all_items
 from ..model import Item
 

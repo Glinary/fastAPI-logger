@@ -1,44 +1,22 @@
-# BE FastAPI Intern
+# FB Messenger FastAPI Logger
 
-## Create a virtual environment (venv)
+## Set up
+1. Type `Ctrl+Shift+P` on vscode
+1. Select the python interpreter and use requirements.txt to install dependencies
+1. Create a .env file with the variables `VERIFICATION_TOKEN` and `PAGE_ACCESS_TOKEN` for the FB webhook
 
-```
-python -m venv venv
-```
+## How to run
+1. Run the backend code `python -m app.backend`
+1. Run the frontend code `python -m app.frontend`
 
-## Activate virtual environment
+## Dockerize
+1. Build the docker image `docker build -t fastapi-app .`
+1. Run the docker container `docker run -d --name my-fastapi-app -p 8000:8000 fastapi-app`
 
-Mac:
-
-```
-source venv/bin/activate
-```
-
-Windows:
-
-```
-source venv/Scripts/activate
-```
-
-## Pip install dependencies
-
-```
-pip install -r requirements.txt
-```
-
-## Command to run the backend code
-
-```
-python -m app.backend
-```
-
-## Command to run the frontend code
-
-```
-python -m app.frontend
-```
-
-## To run backend and frontend at the same time
-
-Open a terminal, activate the `venv`, and use the command to run the backend.
-Open another terminal, activate the `venv`, and use the command to run the frontend.
+## Technologies
+![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688.svg?style=for-the-badge&logo=FastAPI&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED.svg?style=for-the-badge&logo=Docker&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=MongoDB&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063.svg?style=for-the-badge&logo=Pydantic&logoColor=white)
+![CloudFlare](https://img.shields.io/badge/Cloudflare-F38020.svg?style=for-the-badge&logo=Cloudflare&logoColor=white)

@@ -4,3 +4,4 @@ pymongo
 gradio
 pydantic
 pandas
+python-dotenv
