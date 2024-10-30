@@ -4,10 +4,10 @@
 1. Type `Ctrl+Shift+P` on vscode
 1. Select the python interpreter and use requirements.txt to install dependencies
 1. Create a .env file with the variables `VERIFICATION_TOKEN` and `PAGE_ACCESS_TOKEN` for the FB webhook
+1. Add environemnt variables `REGION_NAME` and `TABLE_NAME` for AWS dynamoDB
 
 ## How to run
-1. Run the backend code `python -m app.backend`
-1. Run the frontend code `python -m app.frontend`
+1. Run the backend code `python -m app.main`
 
 ## Dockerize
 1. Build the docker image `docker build -t fastapi-app .`

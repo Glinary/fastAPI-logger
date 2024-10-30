@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Request
-from ..service import verify_webhook, webhook
-from ..model import WebhookRequestData
+from ..services.service import verify_webhook, handle_webhook
+from ..models.model import WebhookRequestData
 
 webhook_router = APIRouter()
 
@@ -10,4 +10,4 @@ async def verify(request: Request):
 
 @webhook_router.post("/webhook")
 async def webhook(data: WebhookRequestData):
-    return webhook(data)
+    return await handle_webhook(data)
